@@ -17,6 +17,10 @@
 
   <properties>
       <spring.version>3.2.3.RELEASE</spring.version>
+      <mybatis.version>3.2.2</mybatis.version>
+      <mybatis-spring.version>1.2.0</mybatis-spring.version>
+      <oracle.version>14_10g</oracle.version>
+      <cglib.version>2.1_3</cglib.version>
   </properties>
   
   <dependencyManagement>
@@ -37,6 +41,12 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		  </dependency>
+		  <dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc</artifactId>
+			<version>${oracle.version}</version>
+			<scope>provided</scope>
+	  	   </dependency>
       </dependencies>
   </dependencyManagement>
 </project>

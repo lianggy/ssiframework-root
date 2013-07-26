@@ -22,6 +22,11 @@
   		<artifactId>ssiframework-web</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	
+  	<dependency>
+		<groupId>com.oracle</groupId>
+		<artifactId>ojdbc</artifactId>
+	  </dependency>
   </dependencies>
 
 </project>

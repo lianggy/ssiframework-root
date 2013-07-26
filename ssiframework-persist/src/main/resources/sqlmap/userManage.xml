@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper    
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.shine.ssi.persist.UserManageDao">
+	    <select id="queryCount" resultType="int">
+	        <![CDATA[
+	        	SELECT COUNT(1) FROM tb_cop_manage_user
+	        ]]>
+	    </select>
+        <select id="findById" parameterType="String" resultType="UserPO">
+            <![CDATA[
+            	SELECT t.username,t.email,t.mobile FROM tb_cop_manage_user t
+            	WHERE t.id=#{id}
+            ]]>
+        </select>
+    </mapper>     
